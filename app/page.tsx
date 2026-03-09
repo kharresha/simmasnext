@@ -1,7 +1,6 @@
-import LoginPage from "./page/auth/login";
+import { redirect } from 'next/navigation';
 
-export default function Home() {
-  return (
-    <LoginPage />
-  );
+export default function RootPage() {
+  // Langsung lempar ke halaman login biar rapi
+  redirect('/auth/login');
 }
